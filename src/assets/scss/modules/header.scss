@@ -1,1 +1,47 @@
 // header style
+.container-header {
+    display: flex;
+    margin-left: 28px;
+    margin-right: 92px;
+    justify-content: space-between;
+   
+}
+ .container_upper-header {
+      flex-wrap: wrap;
+}
+.container_left-header {
+        display: flex;
+        align-items: flex-end;
+        .text-header {
+            margin-left: 2em;
+            font-family: $mySecontFont;
+            font-size: 48px;
+            font-weight: 400;
+        }
+}
+
+   .container_right-header {
+       display: flex;
+       margin-top: 2em;
+
+       .telephone-header {
+            text-align: center;
+           p {
+               font-size: 24px;
+               font-weight: 400;
+           }
+
+           span {
+               color: #152324;
+               opacity: 0.42;
+               font-size: 16px;
+               font-weight: 400;
+               letter-spacing: 0.08px;
+           }
+       }
+       .telephone_Exit-header {
+           margin-top: 0.5em;
+           align-items: center;
+           margin-left: 1.2em;
+       }
+   }
