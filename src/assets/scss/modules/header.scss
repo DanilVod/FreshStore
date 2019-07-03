@@ -1,47 +1,45 @@
 // header style
-.container-header {
+.grid {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+.header__container {
     display: flex;
-    margin-left: 28px;
-    margin-right: 92px;
     justify-content: space-between;
-   
 }
- .container_upper-header {
-      flex-wrap: wrap;
+.header__container-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    .header__text {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        font-family: $mySecontFont;
+        font-size: 48px;
+        font-weight: 400;
+    }
 }
-.container_left-header {
-        display: flex;
-        align-items: flex-end;
-        .text-header {
-            margin-left: 2em;
+.header__container-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    text-align: center;
+    margin-right: 15px;
+    .header__mobile {
+        p {
             font-family: $mySecontFont;
-            font-size: 48px;
+            font-size: 24px;
             font-weight: 400;
         }
+        span {
+            color: $light-color;
+            font-size: 16px;
+            letter-spacing: 0.08px;
+        }
+    }
+    .header__exit-icon {
+        margin-top: 8px;
+        margin-left: 15px;
+    }
 }
-
-   .container_right-header {
-       display: flex;
-       margin-top: 2em;
-
-       .telephone-header {
-            text-align: center;
-           p {
-               font-size: 24px;
-               font-weight: 400;
-           }
-
-           span {
-               color: #152324;
-               opacity: 0.42;
-               font-size: 16px;
-               font-weight: 400;
-               letter-spacing: 0.08px;
-           }
-       }
-       .telephone_Exit-header {
-           margin-top: 0.5em;
-           align-items: center;
-           margin-left: 1.2em;
-       }
-   }
