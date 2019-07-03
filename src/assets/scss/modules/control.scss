@@ -1,14 +1,27 @@
 .control__container {
+    z-index: -1;
+    width: 40px;
     display: flex;
     flex-direction: column;
     .control__item{
         text-align: center;
         height: 50px;
         width: 40px;
+        opacity: .25;
         margin: 5px 0;
         &:not(:last-child) {
             border-bottom: 1px solid rgba($mainFontColor, 0.42);
             
         }
+        &:hover {
+            cursor: pointer;
+            transition: 0.35s;
+            opacity: 1;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .control__container{
+        margin-left: 20px;
     }
 }

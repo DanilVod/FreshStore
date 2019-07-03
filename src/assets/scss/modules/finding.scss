@@ -1,0 +1,40 @@
+.page1 {
+    margin-top: 100px;
+    display: flex;
+}
+.finding {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+}
+.finding-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.finding-input {
+    margin: 0 auto;
+}
+.finding-grid__box {
+    background-color: #f0e4b3;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+}
+.finding-grid__image {
+    width: 62px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.finding-grid__text {
+    text-align: center;
+    width: 60%;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.88;
+    letter-spacing: -0.18px;
+    margin: 0 auto;
+}
