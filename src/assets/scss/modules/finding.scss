@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    margin: 0 auto;
+    margin-left: 250px;
 }
 .finding-grid {
     display: flex;
@@ -16,13 +16,32 @@
     margin: 0 auto;
 }
 .finding-grid__box {
+    position: relative;
     background-color: #f0e4b3;
     margin-left: 20px;
     margin-top: 20px;
     width: 140px;
     height: 140px;
     text-align: center;
+    &:hover {
+        cursor: pointer;
+    }
 }
+.aica {
+    /* position: relative;
+    left: 91.5%;
+    top: 50%;
+    margin-top: -12px;
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-style: inset solid inset solid;
+    border-width: 7.5px 12px 7.5px 0;
+    border-color: transparent #fff transparent transparent; */
+    box-shadow: 10px 11px 23px -5px rgba(240,191,181,0.78);
+    transition: ease-in 0.2s;
+}
+
 .finding-grid__image {
     width: 62px;
     height: 70px;
@@ -37,4 +56,22 @@
     opacity: 0.88;
     letter-spacing: -0.18px;
     margin: 0 auto;
+}
+
+.tab-content__outer {
+    display: none;
+    position: fixed;
+    right: 100px;
+    a {
+        opacity: .70;
+        display: block;
+        color: $neutral-secondary;
+        padding: 7px 0;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            color: #f0bfb5;
+            transition: ease-in-out 0.1s
+        }
+    }
 }

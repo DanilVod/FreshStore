@@ -11,12 +11,21 @@
         margin: 5px 0;
         &:not(:last-child) {
             border-bottom: 1px solid rgba($mainFontColor, 0.42);
-            
         }
         &:hover {
             cursor: pointer;
             transition: 0.35s;
             opacity: 1;
+        }
+        span {
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            .text {
+                font-family: $mySecontFont;
+                margin-left: 20px;
+                display: none;
+            }
         }
     }
 }
