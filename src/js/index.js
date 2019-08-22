@@ -11,6 +11,7 @@ for (let i = 0; i < 16; i++) { findingGrid.insertAdjacentHTML("beforeend", `<div
 for (let i = 0; i < product.length; i++) {
   tabNav.insertAdjacentHTML("beforeend", `<div class="tabs-nav__item" data-tab-name="${i}">${product[i]}</div>`)
 }
+//Выведение табов и продуктов на страницу
 for (let i = 0; i <= 6;i++){
   let arr = [];
   let tabBox = document.querySelector('.tabs_box');
@@ -23,7 +24,8 @@ for (let i = 0; i <= 6;i++){
     }
   }
 }
-let tab = function () {
+//Чтобы при клике на таб появлялся список товаров
+(function () {
   let tabsNav = document.querySelectorAll('.tabs-nav__item')
   let tabContent = document.querySelectorAll('.tab')
   let tabName;
@@ -47,8 +49,8 @@ let tab = function () {
       item.classList.contains(tabName) ? item.classList.add('is-active') :item.classList.remove('is-active')
     })
   }
-};
-tab()
+})();
+
 //Работа сетки, чтобы при нажатии появлялось меню
 let findingBox = $('.finding-grid__box')
 let tabContent = $('.tab-content__outer')   
