@@ -62,7 +62,7 @@
     display: none;
     position: fixed;
     right: 100px;
-    a {
+    .tabs-nav__item {
         opacity: .70;
         display: block;
         color: $neutral-secondary;
@@ -74,4 +74,47 @@
             transition: ease-in-out 0.1s
         }
     }
+}
+.tab {
+    display: none;
+    flex-wrap: wrap;   
+}
+.is-active {
+    display: block;
+}
+.tabs_box {
+    max-width: 1440px;
+}
+.wrapper_product {
+    display: flex;
+    margin-left: 270px;
+    margin-right: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.product-grid__tabs {
+    padding: 10px 40px;
+    .price_tab {
+        float: right;
+        font-size: 25px;
+        color: green;
+    }
+    .picture__product-grid {
+        width: 233px;
+        height: 200xp;
+    }
+    p {
+        letter-spacing: 1px;
+    }
+    .icons_tab {
+        cursor: pointer;
+    }
+}
+.line {
+    margin-top: 10px;
+    height: 1px;
+    margin: 50px auto;
+    width: 55%;
+    background-color: #f2f2f2;
 }
